@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    background: url(../img/fondophp.jpg);
+}
+.form{
+    width: 400px;
+    height: 420px;
+    /* margin-top: -20px; */
+    margin: 90px 500px ;
+    color: white;
+    border: 2px solid black;
+    background-color: #c79316;
+    text-align: center;
+}
+h1{
+    margin: 30px;
+    color: white;
+    font-weight: bold;
+}
+.ti-user{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px 140px;
+}
+.ti-cons{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px 110px;
+}
+.user, .clave{
+    border-radius: 5px;
+    margin: 10px 90px;
+    border-color: black;
+    height: 20px;
+    text-align: center;
+    font-size: 17px;
+}
+.enviar{
+    margin: 10px 170px;
+    border: inherit;
+    color: white;
+    font-size: 20px;
+    background-color: coral;
+    border-radius: 10px;
+}
+.enviar:hover{
+    cursor: pointer;
+}
