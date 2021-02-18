@@ -14,7 +14,7 @@
         <input type="text" placeholder="Digite su usuario" name="usuario" class="user" required autocomplete="off">
         <p class="ti-cons">Contraseña</p>
         <input type="password" placeholder="Digite su contraseña" name="clave" class="clave" required autocomplete="off"> <br><br>
-        <input type="submit" placeholder="Iniciar Sesion" name="enviar" class="enviar" required autocomplete="off">
+        <input type="submit" placeholder=" Iniciar Sesion" name="enviar" class="enviar" required autocomplete="off">
     </form>
 </body>
 </html>
