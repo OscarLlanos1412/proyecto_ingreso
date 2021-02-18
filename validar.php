@@ -52,8 +52,7 @@
     //     header("location:inicio.php");
     // }
     // else{
-    //     
-    //     
+    //      
     //         include('index.php');
     //     
      //     <h1 class="error">Error</h1> -->
