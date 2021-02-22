@@ -1,5 +1,5 @@
 <?php
-    require_once("conec.php");
+    require '../conexion/conec.php';
   
 
     if($_POST["enviar"]){
@@ -19,11 +19,11 @@
             
             //Hacemos la toma de decision para determinar quien se va a logear
             if($_SESSION['id_tip_usu'] == 1){
-                header('Location:admin.php');
+                header('Location:../admin/admin.php');
                 exit();
             }
             elseif ($_SESSION['id_tip_usu'] == 2) {
-                header('Location:usuario.php');
+                header('Location:../usuario/usuario.php');
                 exit();
             }
             else{

@@ -8,7 +8,7 @@
     <title>Ingreso</title>
 </head>
 <body>
-    <form action="validar.php" method="POST" class="form">
+    <form action="php/validar.php" method="POST" class="form">
         <h1>Inicio De Sesion</h1>
         <p class="ti-user">Usuario</p>
         <input type="text" placeholder="Digite su usuario" name="usuario" class="user" required autocomplete="off">
