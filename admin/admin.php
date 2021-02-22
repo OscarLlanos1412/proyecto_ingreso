@@ -1,5 +1,5 @@
 <?php
-    require_once('conec.php');
+    require_once('../conexion/conec.php');
     $nombre = $_SESSION['nombre'];
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
     <title>Administrador</title>
 </head>
 <body>
-    <button class="btn"><a href="cerrarsesion.php" class="bton">Cerrar Sesion</a></button>
+    <button class="btn"><a href="../php/cerrarsesion.php" class="bton">Cerrar Sesion</a></button>
     <div class="contenedor">
         <h1>Bienvenido Administrador <?php echo $nombre; ?></h1>
     </div>

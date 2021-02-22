@@ -1,5 +1,5 @@
 <?php
-    require_once('conec.php');
+    require_once('../conexion/conec.php');
     $nombre = $_SESSION['nombre'];
 ?>
 <!DOCTYPE html>
