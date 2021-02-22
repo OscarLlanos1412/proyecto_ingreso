@@ -11,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
+<button class="btn"><a href="../php/cerrarsesion.php" class="bton">Cerrar Sesion</a></button>
     <h1>Bienvenido user <?php echo $nombre; ?></h1>
 </body>
 </html>

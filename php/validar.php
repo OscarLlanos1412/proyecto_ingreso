@@ -31,11 +31,13 @@
             }
         }
         else{
-            echo "No perro no cogio x2";
+            echo '<script> alert ("Verifica que el usuario y contraseña esten ingresados correctamente");</script>';
+            echo '<script> window.location="../index.php" </script>';
         }
     }
     else{
-        echo "No perro no cogio x3";
+        echo '<script> alert ("Ups algo fallo, intentalo de nuevo");</script>';
+        echo '<script> window.location="../index.php" </script>';
     }
     // $usuario = $_POST['usuario'];
     // $contra = $_POST['clave'];

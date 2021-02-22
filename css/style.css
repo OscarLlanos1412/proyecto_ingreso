@@ -1,21 +1,99 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Courier New', Courier, monospace;
-    background: url(../img/fondophp.jpg);
+/* FONDO DE PANTALLA DE INDEX.PHP */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
+
+section{
+    position: relative;
+    width:100%;
+    height: 100vh;
+    background-color: #001300;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    animation: changecolor 5s linear infinite;
+
+}
+@keyframes changecolor{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+span{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+span::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color: #00ff0a;
+    transform: scale(0.1);
+    box-shadow: 0 0 10px #00ff0a,
+    0 0 20px #00ff0a,
+    0 0 40px #00ff0a,
+    0 0 60px #00ff0a,
+    0 0 80px #00ff0a,
+    0 0 100px #00ff0a;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 2s;
+    animation: changecolo 5s linear infinite;
+}
+
+@keyframes changecolo{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+span:hover::before{
+    transform: scale(1);
+    transition: 0s;
+}
+/*  */
+
+
+.formularioIngreso{
+    width: 50%;
+    position:absolute;
+    z-index:2;
+    border:3px solid red;
+    margin-left:25%;
+    margin-top:6%;border-radius:30px;
+    
+ 
+ 
+}
+
 .form{
-    width: 400px;
+    width: auto;
     height: 420px;
-    /* margin-top: -20px; */
-    margin: 90px 500px ;
+
     color: white;
     border: 2px solid black;
-    background-color: #c79316;
+    background-color: #2ad41380;
     text-align: center;
+    background-color: #00ff0865;
+  
+    box-shadow: 0 0 10px #00ff0a;border-radius:30px;
+   
+    
+    
 }
 h1{
     margin: 30px;
@@ -43,13 +121,40 @@ h1{
     font-size: 17px;
 }
 .enviar{
-    margin: 10px 170px;
-    border: inherit;
+    
+    width: 20%;
     color: white;
+    padding: 10px 0 10px 0;
     font-size: 20px;
-    background-color: coral;
+    background-color: rgba(196, 231, 41, 0.527);
     border-radius: 10px;
 }
 .enviar:hover{
     cursor: pointer;
+}
+
+.enviar:active{
+    background-color: rgba(196, 231, 41, 0.527);
+    box-shadow: 0 5px rgb(140, 189, 143);
+    transform: translateY(4px);
+}
+
+.input{
+    width: 50%;
+    color:black;
+	background: rgba(255, 255, 255, 0.658);
+	border: 3px solid transparent;
+	border-radius: 3px;
+    height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.input:focus {
+    border: 3px solid #0075FF;
+    background:white;
+    border-radius: 3px;
+	outline: none;
+	box-shadow: transparent;
 }
